@@ -318,19 +318,87 @@
 
 									<div class="column">
 										<div class="card">
-											<h1>Vertical Slice 1</h1>
-											<h5>07/04/2022</h5>
-											<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+											<h1>Environmental hazards</h1>
+											<h5>04/06/2022</h5>
+											<span class="image main"><img src="Blog Images/EnvironmentalHazard.png" alt="" /></span>
 											<p>
-												After a lot of hard work from every one we finally have something to show.
+												The planet where the Erimos game takes place has several environmental hazards. One of them, obviously, is the arid planet itself. Landed on a canyon surrounded by breathtaking cliffs, the player should find a path to go on, jumping on rocks and crystal platforms that seem to break at any moment.
 											</p>
-
-											<ul class="actions">
-												<li><a href="" target="_blank" class="button icon solid fa-download" download>Coming soon...</a></li>
-											</ul>
-											
+											<p>
+												Another menace are the glowing crystals. On occasions there is a single crystal alone, other times they are forming a wall, these crystals are as beautiful and captivating as dangerous. The player must watch out carefully because they look similar to a normal crystal, but these crystals explode when the player is near them or when they are hitted. Also, the player must realize that these crystals don't explode when the living creatures from this planet approach them.
+											</p>
 										</div>
+									</div> 
 
+									<div class="column">
+										<div class="card">
+											<h1>Level Design</h1>
+											<h5>03/06/2022</h5>
+											<span class="image main"><img src="Blog Images/LevelDesign.png" alt="" /></span>
+											<p>
+												The level design has made thinking in the game feel, the use of depth, the environmental traps and the combat experience.
+											</p>
+											<p>
+												About the depth, the level has areas where you can see old and future areas depending where the player is. Sometimes, the player doesn't have a clear direction to go, so we added specific visual indicators to mark the correct direction to assure the player doesn’t have the feeling of being lost on the level, without revealing secret zones, creating the feeling of an additional reward finding these zones.
+											</p>
+											<p>
+												Regarding the dangers of the level, the player should take care of the environmental hazards such as deadly cliffs or exploding crystals. In terms of combat, the player must face enemies that will attack melee or enemies that can attack from a distance, in a space where there is only one or two enemies or in arenas where the player will have to bake lots of enemies.
+											</p>
+										</div>
+									</div> 
+
+									<div class="column">
+										<div class="card">
+											<h1>State Machine</h1>
+											<h5>03/06/2022</h5>
+											<span class="image main"><img src="Blog Images/StateMachine.jpg" alt="" /></span>
+											<p>
+												One of the difficulties that we had to face is the creation of a state machine to use it for the animations and the enemies behavior. The state machine is formed by 3 basic structures: nodes, that store the name of the node and the clip associated with, clips, that store the name and the animation related to that clip and if this animation is looped or not, and transitions, that store the node which the transition is coming from, the node which is the target of that link, the trigger which sets the change from the source node to the other one and the interpolation time between them.
+											</p>
+											<p>
+												To make it clear and easy to work with the state machine, we have created a window to edit a state machine without any complications. The nodes are squares easy to identify the name, in yellow, the clip associated, and a pin for input transitions and a pin for output transitions. These transitions are drawn by arrows that show perfectly which node is the source and which the target. All of the attributes of the nodes, the clips or the transition can be edited and once a state machine is created, it can be stored to load the same in another entity.
+											</p>
+										</div>
+									</div> 
+
+									<div class="column">
+										<div class="card">
+											<h1>Scripting System</h1>
+											<h5>01/06/2022</h5>
+											<span class="image main"><img src="Blog Images/ScriptingSystem.png" alt="" /></span>
+											<p>
+												The Hachiko engine uses a separate project to store and manage the gameplay scripts as explained by our engine lead:
+											</p>
+											<blockquote>
+												“Contrary to the project "Hachiko" on our solution called "Engine", the project "Hachiko" outputs a Gameplay.dll when compiled. This Gameplay.dll is then later searched by Hachiko.exe at runtime and goes through a process called Explicit Linking.  Basically using this way of linking the dll, we have the availability to reload the same dll while the engine is running. This is good because it gives us everything we want from a scripting language, with better performance.” 
+ 												<br>- <em> Baran Sürücü, Akita Interactive.</em>
+											</blockquote>
+										</div>
+									</div> 
+
+									<div class="column">
+										<div class="card">
+											<h1>Environment</h1>
+											<h5>26/05/2022</h5>
+											<span class="image main"><img src="Blog Images/Enviroment.png" alt="" /></span>
+											<p>
+												The planet you explore in Erimos is an unexplored desert crawling with hostile creatures and environmental hazards.  The desert aspects of the environment are designed to ground the player before the strange glowing crystals and giant cycloptic Arachnids immerse them in an alien world.
+											</p>
+										</div>
+									</div>
+
+									<div class="column">
+										<div class="card">
+											<h1>Player Mechanics</h1>
+											<h5>21/05/2022</h5>
+											<span class="image main"><img src="Blog Images/PlayerCharacter.png" alt="" /></span>
+											<p>
+												For Erimos, we were inspired by Heart Machine’s Hyper Light Drifter, specifically the movement and combat mechanics, as such our player is able to dash, shoot, and melee attack from the beginning, later we plan for the player to acquire more abilities and weapons to make the gameplay feel more distinct and unique.
+											</p>
+										</div>
+									</div>
+
+									<div class="column">
 										<div class="card">
 											<h1>Concept Discovery</h1>
 											<h5>17/03/2022</h5>
@@ -351,15 +419,19 @@
 									</div>
 
 
-									<!-- Blog Template -->
-									<!-- <div class="column">
+								<!-- Blog Template -->
+								<!-- 
+									<div class="column">
 										<div class="card">
 											<h1>Title</h1>
 											<h5>01/01/2001</h5>
 											<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum aliquet ante sodales dapibus. Pellentesque eget erat porttitor, varius dui sed, gravida sapien. Donec vulputate ligula ac leo eleifend egestas. Ut placerat diam ut elit venenatis, ac pulvinar velit placerat. Mauris ligula diam, placerat ac lorem malesuada, lacinia viverra felis. Praesent eget metus a mi condimentum viverra vitae sed felis. Phasellus vel tempus nibh. Etiam vitae nisl tincidunt, ultricies urna ut, ullamcorper nisl. Donec tempor nulla sapien, sed pellentesque ante luctus in.</p>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum aliquet ante sodales dapibus. Pellentesque eget erat porttitor, varius dui sed, gravida sapien. Donec vulputate ligula ac leo eleifend egestas. Ut placerat diam ut elit venenatis, ac pulvinar velit placerat. Mauris ligula diam, placerat ac lorem malesuada, lacinia viverra felis. Praesent eget metus a mi condimentum viverra vitae sed felis. Phasellus vel tempus nibh. Etiam vitae nisl tincidunt, ultricies urna ut, ullamcorper nisl. Donec tempor nulla sapien, sed pellentesque ante luctus in.
+											</p>
 										</div>
-									</div> -->
+									</div> 
+								-->
 
 								</div>
 							</article>
